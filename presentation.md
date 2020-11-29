@@ -175,12 +175,43 @@ $$y_t = g_2(b_y + W_{ya}a_t)$$
 
 ---
 
+## 3.1 RNN unfolding
 
-## Maximum likelihood to estimate optimal parameters
+> **Theorem:** the unfolding property can only be applied if the following hypothesis is met: the conditional probability distribution over the variables at t+1 given the variables at time t, is stationary.
 
-The ML is proposed to estimate the parameter value $\hat{\theta}$ for a given family, so that under the assumed model $f^{\ast}(x;\hat{\theta})$, the observed data is the most probable. 
+--
 
-The goal is to obtain the best approximate $f^{\ast}(x;\hat{\theta})$ to the true underlying function $f$. 
+### 3.1 RNN unfolding
+
+> <small>Therefore the RNN can be virtually considered as a feedforward NN and the results seen in [1](#/1) and [2](#/3) can are still valid.</small>
+ 
+<small>This is true since for every tuple of starting and target points, it is expected to obtain the same optimal trajectory.  Therefore, considering the starting point as an intermediate point at time t of a longer trajectory with same target point,the following intermediary points are expected to be same.</small>
+
+---
+
+## 3.2 Maximum likelihood
+
+<img data-src="./images/ML concept.png">
+
+---
+
+
+### 3.2 ML to estimate optimal parameters
+
+Now that our family is defined, we need to compute the parameters $\theta$ so to obtain the best approximate $f^{\ast}(x;\hat{\theta})$ to the true underlying function $f$.
+
+
+> **Proposition:** the ML method is proposed to estimate the parameter value $\hat{\theta}$ for a given family, so that under the assumed model $f^{\ast}(x;\hat{\theta})$, the observed data is the most probable. 
+
+---
+
+## ML to estimate optimal parameters
+
+<small> Consider a set of $m$ examples $X ={x^1,...,x^m} $ drawn independently from the true but unknown data generating distribution $p_{data}(x)$. Let  $p_{model}(X; \theta)$ be a parametric family of probability distributions over the same space indexed by $\theta$. The maximum likelihood estimator for $\theta$ is then deﬁned as: 
+$$\theta_{ML} =  \arg\max_{\theta}  p_{model}(X;\theta) = \arg\max_{\theta}
+\prod_{i=1}^m p_{model}(x_i ;\theta) = \arg\max_{\theta}\sum_{i=1}^m \log p_{model}(x_i ;\theta)$$
+
+</small>
 
 ---
 
