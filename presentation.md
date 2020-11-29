@@ -2,7 +2,7 @@
 theme : "night"
 transition: "slide"
 highlightTheme: "monokai"
-logoImg: ".images/logo_US.png"
+logoImg: "./images/logo_US.png"
 slideNumber: false
 title: "Recurrent neural networks for ornithopter trajectory optimization"
 ---
