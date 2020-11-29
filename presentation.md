@@ -2,7 +2,7 @@
 theme : "night"
 transition: "slide"
 highlightTheme: "monokai"
-logoImg: "./presentation/images/logo_US.png"
+logoImg: ".images/logo_US.png"
 slideNumber: false
 title: "Recurrent neural networks for ornithopter trajectory optimization"
 ---
@@ -17,7 +17,7 @@ title: "Recurrent neural networks for ornithopter trajectory optimization"
 
  Recurrent neural networks for ornithopter trajectory optimization
 
- <img data-src="./presentation/images/logo_US.png">
+ <img data-src="./images/logo_US.png">
 
 <small>Supervisor: José Miguel Díaz Báñez / Candidate: Luis David Pascual Callejo</small>
 
@@ -48,13 +48,13 @@ title: "Recurrent neural networks for ornithopter trajectory optimization"
 
 ## 1. Ornithopter trajectory optimization problem
 
-<img data-src="./presentation/images/ornithopter.jpg" width="40%">
+<img data-src="./images/ornithopter.jpg" width="40%">
 
 ---
 
 ### 1.1 Problem statement
 
-<img data-src="./presentation/images/trajectories.png" width="40%">
+<img data-src="./images/trajectories.png" width="40%">
 
 > <small>The problem we want to solve is to compute an optimal trajectory of an ornithopter connecting two given positions A and B while minimizing the energy consumption</small>
 
@@ -89,13 +89,13 @@ More precisely, OSPA is used to compute a set of optimal trajectories for the or
 
 ### 2.1 Feedforward neural networks
 
-<img data-src="./presentation/images/NN_schema.png">
+<img data-src="./images/NN_schema.png">
 
 --
 
 ### 2.1 Feedforward NN algebraic equations
 
-<img data-src="./presentation/images/Neuron_diagram.png" width="40%">
+<img data-src="./images/Neuron_diagram.png" width="40%">
 <small>$$a_i^k = b_i^k + \sum_{j = 1}^{r_{k-1}} w_{ji}^k o_j^{k-1} = \sum_{j = 0}^{r_{k-1}} w_{ji}^k o_j^{k-1}$$ 
 $$o_i^k = g(a_i^k)$$
 </small>
@@ -159,7 +159,7 @@ A recurrent neural network (RNN) is a class of artificial neural networks where 
 
 ### 2.5 Recurrent Neural networks
 
-<img data-src="./presentation/images/RNN gates.png" width="40%">
+<img data-src="./images/RNN gates.png" width="40%">
 $$a_t =g_1( b_a + W_{aa}a_{t-1}+W_{ax}x_t)$$
 $$y_t = g_2(b_y + W_{ya}a_t)$$
 
@@ -171,7 +171,7 @@ $$y_t = g_2(b_y + W_{ya}a_t)$$
 
 ## 3.1 RNN unfolding
 
-<img data-src="./presentation/images/RNN architecture.png">
+<img data-src="./images/RNN architecture.png">
 
 ---
 
