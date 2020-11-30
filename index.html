@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Recurrent neural networks for ornithopter trajectory optimization</title>
+  <title>VSCode Reveal intro</title>
 
   <meta name="description" content="">
   <meta name="author" content="">
@@ -264,7 +264,7 @@
 <body>
   
 <div id="logo" style="position: fixed; top: 20px; left: 20px; z-index: 1">
-    <img src="./images/logo_US.png" />
+    <img src="logo.png" />
 </div>
 
 
@@ -280,7 +280,7 @@
         <section >
             
             <div style="background:red;width:500px" class="block">
-<p><em>Work in progress</em></p>
+<p><em>Work in progress: Tutorial example to be replaced by TFM presentation</em></p>
 </div>
 
             </section>
@@ -291,10 +291,18 @@
     
         <section >
             
-            <h2><a id="user-content-trabajo-fin-de-master" class="anchor" href="#trabajo-fin-de-master" aria-hidden="true"></a>Trabajo Fin de Master</h2>
-<p>Recurrent neural networks for ornithopter trajectory optimization</p>
- <img data-src="./images/logo_US.png">
-<p><small>Supervisor: José Miguel Díaz Báñez / Candidate: Luis David Pascual Callejo</small></p>
+            <h3><a id="user-content-solar-system-exploration-1950s--1960s" class="anchor" href="#solar-system-exploration-1950s--1960s" aria-hidden="true"></a>Solar System Exploration, 1950s – 1960s</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4234372"><label class="task-list-item-label" for="task-item-4234372"> Mercury</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4942781"><label class="task-list-item-label" for="task-item-4942781"> Venus</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8224574"><label class="task-list-item-label" for="task-item-8224574"> Earth (Orbit/Moon)</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9226291"><label class="task-list-item-label" for="task-item-9226291"> Mars</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2105261"><label class="task-list-item-label" for="task-item-2105261"> Jupiter</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1083746"><label class="task-list-item-label" for="task-item-1083746"> Saturn</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-505945"><label class="task-list-item-label" for="task-item-505945"> Uranus</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-964715"><label class="task-list-item-label" for="task-item-964715"> Neptune</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3250164"><label class="task-list-item-label" for="task-item-3250164"> Comet Haley</label></li>
+</ul>
 
             </section>
     
@@ -304,253 +312,855 @@
     
     <section>
         <section >
-            <h2><a id="user-content-overview" class="anchor" href="#overview" aria-hidden="true"></a>Overview</h2>
-<ol>
-<li>Ornithopter trajectory optimization problem
-<ol>
-<li>OSPA approach</li>
-<li>RNN approach</li>
-</ol>
-</li>
-<li>Neural Networks preliminaries
-<ol>
-<li>Feedforward Neural Networks</li>
-<li>NN’s parametric family</li>
-<li>Universal Approximator theorem</li>
-<li>Neural Network architecture</li>
-<li>Recurrent Neural Network</li>
-</ol>
-</li>
-</ol>
+            <h1><a id="user-content-some-table" class="anchor" href="#some-table" aria-hidden="true"></a>some Table</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center" colspan="2">Grouping</th>
+</tr>
+<tr>
+<th>First Header</th>
+<th style="text-align:center">Second Header</th>
+<th style="text-align:right">Third Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content</td>
+<td style="text-align:center" colspan="2"><em>Long Cell</em></td>
+</tr>
+<tr>
+<td>Content</td>
+<td style="text-align:center"><strong>Cell</strong></td>
+<td style="text-align:right">Cell</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>New section</td>
+<td style="text-align:center">More</td>
+<td style="text-align:right">Data</td>
+</tr>
+<tr>
+<td>And more</td>
+<td style="text-align:center" colspan="2">With an escaped ‘\|’</td>
+</tr>
+</tbody>
+<caption id="prototypetable">Prototype table</caption>
+</table>
 
             </section>
         
             <section >
-                <h2><a id="user-content-overview-1" class="anchor" href="#overview-1" aria-hidden="true"></a>Overview</h2>
-<ol>
-<li>Propositions and basic results
-<ol>
-<li>Unfolding of RNN</li>
-<li>Maximum likelihood method</li>
-<li>ML for the regression problem</li>
-<li>ML for the classification problem</li>
-</ol>
-</li>
-<li>RNN implementation</li>
-<li>Results</li>
-</ol>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2><a id="user-content-1-ornithopter-trajectory-optimization-problem" class="anchor" href="#1-ornithopter-trajectory-optimization-problem" aria-hidden="true"></a>1. Ornithopter trajectory optimization problem</h2>
-<img data-src="./images/ornithopter.jpg" width="40%">
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3><a id="user-content-11-problem-statement" class="anchor" href="#11-problem-statement" aria-hidden="true"></a>1.1 Problem statement</h3>
-<img data-src="./images/trajectories.png" width="40%">
-<blockquote>
-<p><small>The problem we want to solve is to compute an optimal trajectory of an ornithopter connecting two given positions A and B while minimizing the energy consumption</small></p>
-</blockquote>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3><a id="user-content-12-the-ospa-approach" class="anchor" href="#12-the-ospa-approach" aria-hidden="true"></a>1.2 The OSPA approach</h3>
-<p>OSPA (Ornithopter Segmentation Path Planning Approach) is a novel heuristic algorithm able to efficiently compute optimal trajectories.
-However it is too slow to be embarked on the ornithopter for inline path computation.</p>
-
-            </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3><a id="user-content-13-the-rnn-approach" class="anchor" href="#13-the-rnn-approach" aria-hidden="true"></a>1.3 The RNN approach</h3>
-<blockquote>
-<p><strong>Proposition:</strong> contour this problem using recurrent neuronal networks.</p>
-</blockquote>
-<p>The neuronal network is tasked with learning the underlying optimal trajectory flight dynamics, which are in turn numerically estimated by the OSPA.</p>
-
-            </section>
-        
-            <section >
-                <h3><a id="user-content-13-the-rnn-approach-1" class="anchor" href="#13-the-rnn-approach-1" aria-hidden="true"></a>1.3 The RNN approach</h3>
-<p>More precisely, OSPA is used to compute a set of optimal trajectories for the ornithopter and then, the neuronal network is tasked with learning the underlying function from it.</p>
-<blockquote>
-<p>The goal is to obtain similar performances to the heuristic method with much faster computation times.</p>
-</blockquote>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2><a id="user-content-2-neural-networks-preliminaries" class="anchor" href="#2-neural-networks-preliminaries" aria-hidden="true"></a>2. Neural Networks preliminaries</h2>
-
-            </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3><a id="user-content-21-feedforward-neural-networks" class="anchor" href="#21-feedforward-neural-networks" aria-hidden="true"></a>2.1 Feedforward neural networks</h3>
-<img data-src="./images/NN_schema.png">
-
-            </section>
-        
-            <section >
-                <h3><a id="user-content-21-feedforward-nn-algebraic-equations" class="anchor" href="#21-feedforward-nn-algebraic-equations" aria-hidden="true"></a>2.1 Feedforward NN algebraic equations</h3>
-<img data-src="./images/Neuron_diagram.png" width="40%">
-<small>
-<span>
-\[\begin{aligned}
-&a_i^k = b_i^k + \sum_{j = 1}^{r_{k-1}} w_{ji}^k o_j^{k-1} = \sum_{j = 0}^{r_{k-1}} w_{ji}^k o_j^{k-1}\\
-&o_i^k = g(a_i^k)
-\end{aligned} \]
-</span>
-</small>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3><a id="user-content-22-nns-parametric-family" class="anchor" href="#22-nns-parametric-family" aria-hidden="true"></a>2.2 NN’s parametric family</h3>
-<blockquote>
-<p>These equations form a parametric family ${f^*(\cdot ,;\theta )\mid \theta \in \Theta }$.</p>
-</blockquote>
-<p>where the family $f^*(\cdot ,;\theta)$ is given by the NN architecture and the parameters $\theta$ correspond to the NN weights $w_{ji}^k$.</p>
-
-            </section>
-        
-            <section >
-                <h3><a id="user-content-22-nns-parametric-family-1" class="anchor" href="#22-nns-parametric-family-1" aria-hidden="true"></a>2.2 NN’s parametric family</h3>
-<blockquote>
-<p>The goal can be reformulated as getting the best approximate $f^{\ast}(x;\hat{\theta})$ to the true underlying function $f$, which is in turn characterized by the OSPA optimal trajectory data set.</p>
-</blockquote>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3><a id="user-content-23-universal-approximator-theorem" class="anchor" href="#23-universal-approximator-theorem" aria-hidden="true"></a>2.3 Universal approximator theorem</h3>
-<blockquote>
-<p><small><strong>Theorem:</strong> feedforward networks with a linear output layer and at least one hidden layer with any continuous squashing function can approximate any Borel measurable function from one finite-dimensional space to another with any desired non-zero amount of error, provided that the network is given enough hidden units.</small></p>
-</blockquote>
-
-            </section>
-        
-            <section >
-                <h3><a id="user-content-23-universal-approximator-theorem-1" class="anchor" href="#23-universal-approximator-theorem-1" aria-hidden="true"></a>2.3 Universal approximator theorem</h3>
-<blockquote>
-<p>Therefore $f^{\ast}(x;\hat{\theta})$ can approximate $f$ as much as desired</p>
-</blockquote>
-<p>This is true since a continuous function on a closed and bounded subset of $R^N$ is Borel measurable.</p>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3><a id="user-content-24-nn-architecture" class="anchor" href="#24-nn-architecture" aria-hidden="true"></a>2.4 NN architecture</h3>
-<p>The neuronal network architecture and activation functions define the capacity the parametric family
-$${f^\ast(\cdot ,;\theta )\mid \theta \in \Theta }$$</p>
-<small>
-The capacity is determined by:
+                <table>
+<thead>
+<tr>
+<th>First header</th>
+<th>Second header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>List:</p>
 <ul>
-<li>Depth and width of the network: they will define the number of parameters available.</li>
-<li>Activation functions and general architecture: they will define the set of functions that can be learned by the NN.
-</small></li>
+<li>over</li>
+<li>several</li>
+<li>lines</li>
+</ul>
+</td>
+<td>
+<p>More
+data</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+            </section>
+        
+            <section >
+                <table>
+<thead>
+<tr>
+<th>First header</th>
+<th>Second header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3">Merged</td>
+<td>Cell 1</td>
+</tr>
+<tr>
+<td>Cell 2</td>
+</tr>
+<tr>
+<td>Cell 3</td>
+</tr>
+</tbody>
+</table>
+
+            </section>
+        
+            <section >
+                
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <div class="mermaid">
+sequenceDiagram
+    participant Alice
+    participant Bob 
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+</div> 
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <div class="mermaid">
+graph LR;
+  A(AAAA)==> B(B node);
+  B==> C(SEE SEE);
+<p>class A diag-a-styles;
+class B diag-b-styles
+class C diag-c-styles;</p>
+</div>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h1><a id="user-content-vscode-reveal" class="anchor" href="#vscode-reveal" aria-hidden="true"></a>vscode-reveal</h1>
+<p>Awesome VS code extension using The HTML Presentation Framework Revealjs $\theta$</p>
+<p><small>Created by <a href="https://www.evilznet.com">Vincent B.</a> / <a href="https://twitter.com/Evilznet">@Evilznet</a></small></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-hello-there" class="anchor" href="#hello-there" aria-hidden="true"></a>Hello There</h2>
+<p>reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.</p>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h2><a id="user-content-vertical-slides" class="anchor" href="#vertical-slides" aria-hidden="true"></a>Vertical Slides</h2>
+<p>Slides can be nested inside of each other.</p>
+<p>Use the <em>Space</em> key to navigate through all slides.</p>
+<a href="#" class="navigate-down">
+    <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+</a>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-basement-level-1" class="anchor" href="#basement-level-1" aria-hidden="true"></a>Basement Level 1</h2>
+<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-basement-level-2" class="anchor" href="#basement-level-2" aria-hidden="true"></a>Basement Level 2</h2>
+<p>That’s it, time to go back up.</p>
+<a href="#/2">
+    <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+</a>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-point-of-view" class="anchor" href="#point-of-view" aria-hidden="true"></a>Point of View</h2>
+<p>Press <strong>ESC</strong> to enter the slide overview.</p>
+<p>Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.</p>
+<blockquote>
+<p>Use ctrl + click in Linux</p>
+</blockquote>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-touch-optimized" class="anchor" href="#touch-optimized" aria-hidden="true"></a>Touch Optimized</h2>
+<p>Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-markdown-support" class="anchor" href="#markdown-support" aria-hidden="true"></a>Markdown support</h2>
+<pre><code>  ## Markdown support
+
+  Write content using inline or external Markdown.
+  Instructions and more info available in the 
+  [readme](https://github.com/hakimel/reveal.js#markdown).
+</code></pre>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h2><a id="user-content-fragments" class="anchor" href="#fragments" aria-hidden="true"></a>Fragments</h2>
+<p>Hit the next arrow…</p>
+<p>… to step through …
+<span class="fragment">… a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+<p>Note:
+This slide has fragments which are also stepped through in the notes window.</p>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-fragment-styles" class="anchor" href="#fragment-styles" aria-hidden="true"></a>Fragment Styles</h2>
+<p>There’s different types of fragments, like:</p>
+<p class="fragment grow">grow</p>
+<p class="fragment shrink">shrink</p>
+<p class="fragment fade-out">fade-out</p>
+<p class="fragment fade-right">fade-right</p>
+<p class="fragment fade-up">fade-up</p>
+<p class="fragment fade-down">fade-down</p>
+<p class="fragment fade-left">fade-left</p>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-fragment-styles-1" class="anchor" href="#fragment-styles-1" aria-hidden="true"></a>Fragment Styles</h2>
+<p class="fragment fade-in-then-out">fade-in-then-out</p>
+<p class="fragment fade-in-then-semi-out&quot;">fade-in-then-semi-out</p>
+<p class="fragment current-visible">current-visible</p>
+<p>Highlight <strong class="fragment highlight-red">red</strong> <strong class="fragment highlight-blue">blue</strong> <strong class="fragment highlight-green">green</strong></p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-transition-styles" class="anchor" href="#transition-styles" aria-hidden="true"></a>Transition Styles</h2>
+<p>You can select from different transitions, like:
+<a href="?transition=none#/transitions">None</a> - <a href="?transition=fade#/transitions">Fade</a> - <a href="?transition=slide#/transitions">Slide</a> - <a href="?transition=convex#/transitions">Convex</a> - <a href="?transition=concave#/transitions">Concave</a> - <a href="?transition=zoom#/transitions">Zoom</a></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-themes" class="anchor" href="#themes" aria-hidden="true"></a>Themes</h2>
+<p>reveal.js comes with a few themes built in:
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/black.css'); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/white.css'); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/league.css'); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/sky.css'); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/beige.css'); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/simple.css'); return false;">Simple</a> <br>
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/serif.css'); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/blood.css'); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/night.css'); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/moon.css'); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','libs/reveal.js/3.8.0/css/theme/solarized.css'); return false;">Solarized</a></p>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section data-background="#dddddd">
+            <!-- .slide: data-background="#dddddd" -->
+<h2><a id="user-content-slide-backgrounds" class="anchor" href="#slide-backgrounds" aria-hidden="true"></a>Slide Backgrounds</h2>
+<p>Set <code>data-background=&quot;#dddddd&quot;</code> on a slide to change the background color. All CSS color formats are supported.</p>
+<p><a href="#" class="navigate-down"><img src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow" width="178" height="238"></a></p>
+
+            </section>
+        
+            <section data-background="default-thumbnail.jpg">
+                <!-- .slide: data-background="default-thumbnail.jpg" -->
+<h2><a id="user-content-image-backgrounds" class="anchor" href="#image-backgrounds" aria-hidden="true"></a>Image Backgrounds</h2>
+<pre><code class="language-markdown">&lt;!-- .slide: data-background=&quot;default-thumbnail.jpg&quot; --&gt;
+</code></pre>
+
+            </section>
+        
+            <section data-background="default-thumbnail.jpg" data-background-repeat="repeat" data-background-size="100px">
+                <!-- .slide: data-background="default-thumbnail.jpg" data-background-repeat="repeat" data-background-size="100px" -->
+<h2><a id="user-content-tiled-backgrounds" class="anchor" href="#tiled-backgrounds" aria-hidden="true"></a>TILED BACKGROUNDS</h2>
+<pre><code class="language-markdown">&lt;!-- .slide: data-background=&quot;default-thumbnail.jpg&quot; data-background-repeat=&quot;repeat&quot; data-background-size=&quot;100px&quot; --&gt;
+</code></pre>
+
+            </section>
+        
+            <section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+                <!-- .slide: data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000" -->
+<h2><a id="user-content-video-backgrounds" class="anchor" href="#video-backgrounds" aria-hidden="true"></a>Video Backgrounds</h2>
+<pre><code class="language-markdown">&lt;!-- .slide: data-background-video=&quot;https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/Big_Buck_Bunny_4K.webm/Big_Buck_Bunny_4K.webm.480p.vp9.webm&quot; data-background-color=&quot;#000000&quot; --&gt;
+</code></pre>
+
+            </section>
+        
+            <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+                <!-- .slide: data-background="http://i.giphy.com/90F8aUepslB84.gif" -->
+<h2><a id="user-content--and-gifs" class="anchor" href="#-and-gifs" aria-hidden="true"></a>… and GIFs!</h2>
+<pre><code class="language-markdown">&lt;!-- .slide: data-background=&quot;http://i.giphy.com/90F8aUepslB84.gif&quot; --&gt;
+</code></pre>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+            
+            <!-- .slide: data-transition="slide" data-background="#4d7e65" data-background-transition="zoom" -->
+<h2><a id="user-content-background-transitions" class="anchor" href="#background-transitions" aria-hidden="true"></a>Background Transitions</h2>
+<p>Different background transitions are available via the backgroundTransition option. This one’s called “zoom”.</p>
+
+            </section>
+    
+
+
+
+    
+        <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+            
+            <!-- .slide: data-transition="slide" data-background="#b5533c" data-background-transition="zoom" -->
+<h2><a id="user-content-background-transitions-1" class="anchor" href="#background-transitions-1" aria-hidden="true"></a>Background Transitions</h2>
+<p>You can override background transitions per-slide.</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-pretty-code" class="anchor" href="#pretty-code" aria-hidden="true"></a>Pretty Code</h2>
+<pre><code class="language-js">function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &amp;lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+</code></pre>
+<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-marvelous-list" class="anchor" href="#marvelous-list" aria-hidden="true"></a>Marvelous List</h2>
+<ul>
+<li>No order here</li>
+<li>Or here</li>
+<li>Or here</li>
+<li>Or here</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-fantastic-ordered-list" class="anchor" href="#fantastic-ordered-list" aria-hidden="true"></a>Fantastic Ordered List</h2>
+<ol>
+<li>One is smaller than…</li>
+<li>Two is smaller than…</li>
+<li>Three!</li>
+</ol>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-tabular-tables" class="anchor" href="#tabular-tables" aria-hidden="true"></a>Tabular Tables</h2>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-clever-quotes" class="anchor" href="#clever-quotes" aria-hidden="true"></a>Clever Quotes</h2>
+<p>These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">“The nice thing about standards is that there are so many to choose from”</q> and block:</p>
+<blockquote>
+<p>“For years there has been a theory that millions of monkeys typing at random on millions of typewriters would reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.”</p>
+</blockquote>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-intergalactic-interconnections" class="anchor" href="#intergalactic-interconnections" aria-hidden="true"></a>Intergalactic Interconnections</h2>
+<p>You can link between slides internally, <a href="#/2/3">like this</a>.</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-speaker-view" class="anchor" href="#speaker-view" aria-hidden="true"></a>Speaker View</h2>
+<p>There’s a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+<p>Press the <em>S</em> key to try it out.</p>
+<aside class="notes">Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).</aside>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-export-to-pdf" class="anchor" href="#export-to-pdf" aria-hidden="true"></a>Export to PDF</h2>
+<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here’s an example:</p>
+<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen=""></iframe>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-global-state" class="anchor" href="#global-state" aria-hidden="true"></a>Global State</h2>
+<p>Set <code>data-state=&quot;something&quot;</code> on a slide and <code>&quot;something&quot;</code> will be added as a class to the document element when the slide is open. This lets you apply broader style changes, like switching the page background.</p>
+
+            </section>
+    
+
+
+
+    
+        <section data-state="customevent">
+            
+            <!-- .slide: data-state="customevent" -->
+<h2><a id="user-content-state-events" class="anchor" href="#state-events" aria-hidden="true"></a>State Events</h2>
+<p>Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.</p>
+<pre><code class="language-js">Reveal.addEventListener( 'customevent', function() {
+	console.log( '&quot;customevent&quot; has fired' );
+} );
+</code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-take-a-moment" class="anchor" href="#take-a-moment" aria-hidden="true"></a>Take a Moment</h2>
+<p>Press B or . on your keyboard to pause the presentation. This is helpful when you’re on stage and want to take distracting slides off the screen.</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-much-more" class="anchor" href="#much-more" aria-hidden="true"></a>Much more</h2>
+<ul>
+<li>Right-to-left support</li>
+<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h2><a id="user-content-plugins" class="anchor" href="#plugins" aria-hidden="true"></a>Plugins</h2>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-search" class="anchor" href="#search" aria-hidden="true"></a>search</h2>
+<p>Handles finding a text string anywhere in the slides and showing the next occurrence to the user by navigatating to that slide and highlighting it.</p>
+<p><strong>Shortcut : <code>CTRL + SHIFT + F</code></strong></p>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-zoom" class="anchor" href="#zoom" aria-hidden="true"></a>Zoom</h2>
+<p>Zoom anywhere on your presentation</p>
+<p><strong>Shortcut : <code>alt + click</code>: Zoom in. Repeat to zoom back out.</strong></p>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-notes" class="anchor" href="#notes" aria-hidden="true"></a>Notes</h2>
+<p>Add note to speaker view.</p>
+<p>Default markdown syntaxe is</p>
+<pre><code class="language-text">note: a custom note here
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-chalkboard" class="anchor" href="#chalkboard" aria-hidden="true"></a>Chalkboard</h2>
+<p>Have you ever missed the traditional classroom experience where you can quickly sketch something on a chalkboard?</p>
+<p>Just press ‘b’ or click on the pencil button to open and close your chalkboard.</p>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-chalkboard-1" class="anchor" href="#chalkboard-1" aria-hidden="true"></a>Chalkboard</h2>
+<ul>
+<li>Click the <code>left mouse button</code> to write on the chalkboard</li>
+<li>Click the <code>right mouse button</code> to wipe the chalkboard</li>
+<li>Click the <code>DEL</code> key to clear the chalkboard</li>
 </ul>
 
             </section>
         
             <section >
-                <h3><a id="user-content-24-nn-architecture-1" class="anchor" href="#24-nn-architecture-1" aria-hidden="true"></a>2.4 NN architecture</h3>
-<p>Due to the complexity of the ornithopter problem, our NN architecture must have the capacity to capture temporal dynamic behaviors.</p>
-<blockquote>
-<p><strong>Proposition:</strong>  use a recurrent neural network with just one single layer to learn the OSPA underlaying trajectory flight dynamics</p>
-</blockquote>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3><a id="user-content-25-recurrent-neural-networks" class="anchor" href="#25-recurrent-neural-networks" aria-hidden="true"></a>2.5 Recurrent Neural networks</h3>
-<small>
-A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence. These connections allow previous outputs to be used as inputs while having hidden states.
-</small>
+                <h2><a id="user-content-make-notes-on-slides" class="anchor" href="#make-notes-on-slides" aria-hidden="true"></a>MAKE NOTES ON SLIDES</h2>
+<p>Did you notice the <i class="fa fa-pencil"></i> button?</p>
+<p>By pressing ‘c’ or clicking the button you can start and stop the notes taking mode allowing you to write comments and notes directly on the slide.</p>
 
             </section>
         
             <section >
-                <h3><a id="user-content-25-recurrent-neural-networks-1" class="anchor" href="#25-recurrent-neural-networks-1" aria-hidden="true"></a>2.5 Recurrent Neural networks</h3>
-<img data-src="./images/RNN gates.png" width="50%">
-<small>
+                <h2><a id="user-content-chart" class="anchor" href="#chart" aria-hidden="true"></a>Chart</h2>
+<p>Add chart from simple string</p>
+
+            </section>
+        
+            <section >
+                <h3><a id="user-content-line-chart-from-json-string" class="anchor" href="#line-chart-from-json-string" aria-hidden="true"></a>Line chart from JSON string</h3>
+<canvas class="stretch" data-chart="line">
+<!--
+{
+ "data": {
+  "labels": ["January"," February"," March"," April"," May"," June"," July"],
+  "datasets":[
+   {
+    "data":[65,59,80,81,56,55,40],
+    "label":"My first dataset","backgroundColor":"rgba(20,220,220,.8)"
+   },
+   {
+    "data":[28,48,40,19,86,27,90],
+    "label":"My second dataset","backgroundColor":"rgba(220,120,120,.8)"
+   }
+  ]
+ }, 
+ "options": { "responsive": "true" }
+}
+-->
+</canvas>
+
+            </section>
+        
+            <section >
+                <h3><a id="user-content-line-chart-with-csv-data-and-json-configuration" class="anchor" href="#line-chart-with-csv-data-and-json-configuration" aria-hidden="true"></a>Line chart with CSV data and JSON configuration</h3>
+<canvas class="stretch" data-chart="line">
+My first dataset,  65, 59, 80, 81, 56, 55, 40
+<!-- This is a comment -->
+My second dataset, 28, 48, 40, 19, 86, 27, 90
+<!-- 
+{ 
+"data" : {
+	"labels" : ["Enero", "Febrero", "Marzo", "Avril", "Mayo", "Junio", "Julio"],
+	"datasets" : [{ "borderColor": "#0f0", "borderDash": ["5","10"] }, { "borderColor": "#0ff" } ]
+	}
+}
+-->
+</canvas>
+
+            </section>
+        
+            <section >
+                <h3><a id="user-content-bar-chart-with-csv-data" class="anchor" href="#bar-chart-with-csv-data" aria-hidden="true"></a>Bar chart with CSV data</h3>
+<canvas class="stretch" data-chart="bar">
+,January, February, March, April, May, June, July
+My first dataset, 65, 59, 80, 81, 56, 55, 40
+My second dataset, 28, 48, 40, 19, 86, 27, 90
+</canvas>
+
+            </section>
+        
+            <section >
+                <h3><a id="user-content-stacked-bar-chart-from-csv-file-with-json-configuration" class="anchor" href="#stacked-bar-chart-from-csv-file-with-json-configuration" aria-hidden="true"></a>Stacked bar chart from CSV file with JSON configuration</h3>
+<canvas class="stretch" data-chart="bar" data-chart-src="https://rajgoel.github.io/reveal.js-demos/chart/data.csv">
+<!-- 
+{
+"data" : {
+"datasets" : [{ "backgroundColor": "#0f0" }, { "backgroundColor": "#0ff" } ]
+},
+"options": { "responsive": true, "scales": { "xAxes": [{ "stacked": true }], "yAxes": [{ "stacked": true }] } }
+}
+-->
+</canvas>
+
+            </section>
+        
+            <section >
+                <h3><a id="user-content-pie-chart" class="anchor" href="#pie-chart" aria-hidden="true"></a>Pie chart</h3>
+<canvas class="stretch" data-chart="pie">
+,Black, Red, Green, Yellow
+My first dataset, 40, 40, 20, 6
+My second dataset, 45, 40, 25, 4
+</canvas>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-embedding-a-tweet" class="anchor" href="#embedding-a-tweet" aria-hidden="true"></a>EMBEDDING A TWEET</h2>
+<p>To embed a tweet, simply determine its URL and include the following code in your slides:</p>
+<pre><code class="language-html">&lt;div class=&quot;tweet&quot; data-src=&quot;TWEET_URL&quot;&gt;&lt;/div&gt;
+</code></pre>
+
+            </section>
+        
+            <section >
+                <div class="tweet"  data-src="https://twitter.com/Evilznet/status/1086984843056107525"></div>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-menu" class="anchor" href="#menu" aria-hidden="true"></a>menu</h2>
+<p>A SLIDEOUT MENU FOR NAVIGATING REVEAL.JS PRESENTATIONS</p>
+
+            </section>
+        
+            <section >
+                <p>See the  <i class="fa fa-bars"></i>  in the corner?</p>
+<p>Click it and the menu will open from the side.</p>
+<p>Click anywhere on the slide to return to the presentation,
+or use the close button in the menu.</p>
+
+            </section>
+        
+            <section >
+                <p>If you don’t like the menu button,
+you can use the slide number instead.</p>
+<p>Go on, give it a go.</p>
+<p>The menu button can be hidden using the options,
+but you need to enable the slide number link.</p>
+
+            </section>
+        
+            <section >
+                <p>Or you can open the menu by pressing the m key.</p>
+<p>You can navigate the menu with the keyboard as well.
+Just use the arrow keys and <space> or <enter> to change slides.</p>
+<p>You can disable the keyboard for the
+menu in the options if you wish.</p>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-left-or-right" class="anchor" href="#left-or-right" aria-hidden="true"></a>LEFT OR RIGHT</h2>
+<p>You can configure the menu to slide in from the left or right</p>
+
+            </section>
+        
+            <section >
+                <h3><a id="user-content-markers" class="anchor" href="#markers" aria-hidden="true"></a>MARKERS</h3>
+<p>The slide markers in the menu can be useful to show
+you the progress through the presentation.</p>
+<p>You can hide them if you want.</p>
+<p>You can also show/hide slide numbers.</p>
+
+            </section>
+        
+            <section >
+                <h3><a id="user-content-slide-titles" class="anchor" href="#slide-titles" aria-hidden="true"></a>SLIDE TITLES</h3>
+<p>The menu uses the first heading to label each slide
+but you can specify another label if you want.</p>
+<p>Use a data-menu-title attribute in the section element to give the slide a custom label, or add a menu-title class to any element in the slide you wish.</p>
+<p>You can change the titleSelector option and use
+any elements you like as the default for labelling each slide.</p>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-mathsvg" class="anchor" href="#mathsvg" aria-hidden="true"></a>MathSVG</h2>
+<p>An extension of the math.js plugin allowing to render LaTeX in SVG.</p>
+
+            </section>
+        
+            <section >
+                <h3><a id="user-content-the-lorenz-equations" class="anchor" href="#the-lorenz-equations" aria-hidden="true"></a>The Lorenz Equations</h3>
 <span>
 \[\begin{aligned}
-&a_t =g_1( b_a + W_{aa}a_{t-1}+W_{ax}x_t) \\
-&y_t = g_2(b_y + W_{ya}a_t)
+\dot{x} &amp; = \sigma(y-x) \\
+\dot{y} &amp; = \rho x - y - xz \\
+\dot{z} &amp; = -\beta z + xy
 \end{aligned} \]
 </span>
-</small>
+
+            </section>
+        
+            <section >
+                <h3><a id="user-content-the-cauchy-schwarz-inequality" class="anchor" href="#the-cauchy-schwarz-inequality" aria-hidden="true"></a>The Cauchy-Schwarz Inequality</h3>
+<script type="math/tex; mode=display">
+  \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+</script>
+
+            </section>
+        
+            <section >
+                <h3><a id="user-content-custom-footer" class="anchor" href="#custom-footer" aria-hidden="true"></a>Custom footer</h3>
+<p>Includes a footer in all the slides of a Reveal.js presentation (with optional exclusion of some slides) that will show the title of the presentation.</p>
+
+            </section>
+        
+            <section >
+                <h2><a id="user-content-code-focus" class="anchor" href="#code-focus" aria-hidden="true"></a>code-focus</h2>
+<p>A plugin that allows focusing on specific lines of code blocks.</p>
+
+            </section>
+        
+            <section >
+                <h3><a id="user-content-code-focus-demo" class="anchor" href="#code-focus-demo" aria-hidden="true"></a>Code Focus Demo</h3>
+<pre><code class="language-html">&lt;section&gt;
+  &lt;pre&gt;&lt;code&gt;
+  // Useless comment.
+  alert('hi');
+  &lt;/pre&gt;&lt;/code&gt;
+  &lt;p class=&quot;fragment&quot; data-code-focus=&quot;1&quot;&gt;
+    This focuses on the comment.
+  &lt;/p&gt;
+  &lt;p class=&quot;fragment&quot; data-code-focus=&quot;1-2&quot;&gt;
+    Another fragment.
+  &lt;/p&gt;
+&lt;/section&gt;
+</code></pre>
+<p class="fragment current-only" data-code-focus="1-12">This section is a slide.</p>
+<p class="fragment current-only" data-code-focus="2-5">This will be highlighted by <code>highlight.js</code>.</p>
+<p class="fragment current-only" data-code-focus="6-8">This fragment focuses on the first line.</p>
+<p class="fragment current-only" data-code-focus="9-11">This fragment focuses on lines 1 and 2.</p>
+<p class="fragment current-only" data-code-focus="1-12">See the next slide for a demo with the contents of this code block.</p>
 
             </section>
         
@@ -561,216 +1171,10 @@ A recurrent neural network (RNN) is a class of artificial neural networks where 
 
 
     
-        <section >
+        <section style="text-align: left;">
             
-            <h2><a id="user-content-3-propositions-and-basic-results" class="anchor" href="#3-propositions-and-basic-results" aria-hidden="true"></a>3. Propositions and basic results</h2>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2><a id="user-content-31-rnn-unfolding" class="anchor" href="#31-rnn-unfolding" aria-hidden="true"></a>3.1 RNN unfolding</h2>
-<img data-src="./images/RNN architecture.png">
-
-            </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h2><a id="user-content-31-rnn-unfolding-1" class="anchor" href="#31-rnn-unfolding-1" aria-hidden="true"></a>3.1 RNN unfolding</h2>
-<small>
-<blockquote>
-<p><strong>Theorem:</strong> the unfolding property can only be applied if the following hypothesis is met: the conditional probability distribution over the variables at t+1 given the variables at time t, is stationary.
-</small></p>
-</blockquote>
-
-            </section>
-        
-            <section >
-                <h3><a id="user-content-31-rnn-unfolding-2" class="anchor" href="#31-rnn-unfolding-2" aria-hidden="true"></a>3.1 RNN unfolding</h3>
-<blockquote>
-<p><small>Therefore the RNN can be virtually considered as a feedforward NN and the results seen in <a href="#/1">1</a> and <a href="#/3">2</a> are still valid.</small></p>
-</blockquote>
-<p><small>This is true since for every tuple of starting and target points, it is expected to obtain the same optimal trajectory.  Therefore, considering the starting point as an intermediate point at time t of a longer trajectory with same target point,the following intermediary points are expected to be same.</small></p>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2><a id="user-content-32-maximum-likelihood" class="anchor" href="#32-maximum-likelihood" aria-hidden="true"></a>3.2 Maximum likelihood</h2>
-<img data-src="./images/ML concept.png">
-
-            </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3><a id="user-content-32-ml-to-estimate-optimal-parameters" class="anchor" href="#32-ml-to-estimate-optimal-parameters" aria-hidden="true"></a>3.2 ML to estimate optimal parameters</h3>
-<small>
-Now that our family is defined, we need to compute the parameters $\theta$ so to obtain the best approximate $f^{\ast}(x;\hat{\theta})$ to the true underlying function $f$.
-<blockquote>
-<p><strong>Proposition:</strong> the ML method is proposed to estimate the parameter value $\hat{\theta}$ for a given family, so that under the assumed model $f^{\ast}(x;\hat{\theta})$, the observed data is the most probable.
-</small></p>
-</blockquote>
-
-            </section>
-        
-            <section >
-                <h3><a id="user-content-32-ml-to-estimate-optimal-parameters-1" class="anchor" href="#32-ml-to-estimate-optimal-parameters-1" aria-hidden="true"></a>3.2 ML to estimate optimal parameters</h3>
-<blockquote>
-<p><small> <strong>Definition:</strong> Consider a set of $m$ examples $X ={x^1,…,x^m} $ drawn independently from the true but unknown data generating distribution $p_{data}(x)$. Let  $p_{model}(X; \theta)$ be a parametric family of probability distributions over the same space indexed by $\theta$. The maximum likelihood estimator for $\theta$ is then deﬁned as:</p>
-</blockquote>
-<script type="math/tex; mode=display">
-  \theta_{ML} =  \arg\max_{\theta}  p_{model}(X;\theta) = \arg\max_{\theta}
-\prod_{i=1}^m p_{model}(x_i ;\theta)
-</script>
-</small>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3><a id="user-content-33-regression-problem" class="anchor" href="#33-regression-problem" aria-hidden="true"></a>3.3 Regression problem</h3>
-<small>
-In the regression problem, the RNN aims to output the best possible approximation to the values of the true states in $R^6$ given by an OSPA trajectory.
-<p>$$y_i = \hat{y_i} + e_i$$</p>
-<p>where  $\hat{y_i}$ is our prediction, $y_i$ is the real value and $e_i$ is the error due to non modeled aspects which is assumed to be Gaussian
-</small></p>
-
-            </section>
-        
-            <section >
-                <h2><a id="user-content-331-mean-squared-error" class="anchor" href="#331-mean-squared-error" aria-hidden="true"></a>3.3.1 Mean squared Error</h2>
-<blockquote>
-<p><small> <strong>Proposition:</strong> given the above mentioned hypothesis, it is equivalent to use the Log Likelihood or the Mean Squared Error as loss functions for our NN.</p>
-</blockquote>
-<script type="math/tex; mode=display">
-   \theta_{ML} =  \arg\max_{\theta} L= \arg\max_{\theta}m\log\frac {1}{\sigma {\sqrt {2\pi }}}-\sum_{i=1}^m {\frac {1}{2}}\left({\frac {y_i - \hat{y_i}  }{\sigma }}\right)^{2} = \arg\max_{\theta}\sum_{i=1}^m {\frac {1}{2}}\left({y_i - \hat{y_i}  }\right)^{2}
-</script>
-</small>
-
-            </section>
-        
-            <section >
-                <h3><a id="user-content-332-kl-divergence" class="anchor" href="#332-kl-divergence" aria-hidden="true"></a>3.3.2 KL Divergence</h3>
-<blockquote>
-<p><small> <strong>Proposition:</strong>  It is equivalent to use the Log-likelihood or the KL divergence as loss functions to compute the optimal parameters for our NN regression problem.</p>
-</blockquote>
-<script type="math/tex; mode=display">
-   \displaystyle D_{\text{KL}}(p_{data}\parallel p_{model})=-H_{p_{data}} - L(x;\theta)
-</script>
-</small>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3><a id="user-content-332-kl-divergence-1" class="anchor" href="#332-kl-divergence-1" aria-hidden="true"></a>3.3.2 KL Divergence</h3>
-<small>
-The KL divergence loss function represents the amount of information lost when $p_{model}$ is used to approximate $p_{data}$.
-<p>Or in other words, when our neural network $f^{\ast}(x;\hat{\theta})$ is used instead of the real source of data, which is our OSPA planner.
-</small></p>
-
-            </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3><a id="user-content-34-classification-problem" class="anchor" href="#34-classification-problem" aria-hidden="true"></a>3.4 Classification problem</h3>
-<small>
-The ornithopter possible action data set is actually a finite set of 35 different action tuples. This is due to the methodology of the OSPA to compute the optimal path, which requires a finite set of possible action outcomes in order to obtain a search tree.
-<p>In the classification model each action $a_k$ is treated as a different category, leading to 35 different categories: $$a_k = (\delta_k, f_k), \ k =1,…, 35$$</p>
-</small>
-
-            </section>
-        
-            <section >
-                <h3><a id="user-content-33-classification-problem" class="anchor" href="#33-classification-problem" aria-hidden="true"></a>3.3 Classification problem</h3>
-<small>
-In this case, we want the RNN to output the probability that each category has to be selected:
- $$\hat{y_k} = p(y_k|x,\theta)$$
-where $\hat{y_k}$ is the vector with the predicted probabilities for each category $k$ and $y_k$ is the "one hot" representation of each category
-</small>
-
-            </section>
-        
-            <section >
-                <h3><a id="user-content-341-cross-entropy" class="anchor" href="#341-cross-entropy" aria-hidden="true"></a>3.4.1 Cross Entropy</h3>
-<blockquote>
-<p><small> <strong>Proposition:</strong> It is equivalent to use the Log-likelihood or the CategoricalCross Entropy as loss function for our NN classification problem.</p>
-</blockquote>
-<script type="math/tex; mode=display">
-   \theta_{ML} =  \arg\max_{\theta} \sum_{i=1}^m \log p(y|x_i ;\theta)= \arg\max_{\theta} - \sum_{i=1}^m H(p(y_i), \hat{y}_i)
-</script>
-</small>
-
-            </section>
-        
-            <section >
-                <h3><a id="user-content-341-cross-entropy-1" class="anchor" href="#341-cross-entropy-1" aria-hidden="true"></a>3.4.1 Cross Entropy</h3>
-<small>
-The cross entropy loss function can be interpreted as the expected message-length per datum when a wrong distribution $p_{model}$ is assumed while the data actually follows a distribution $p_{data}$.
-<p>Or in other words, when our neural network $f^{\ast}(x;\hat{\theta})$ is used instead of the real source of data, which is our OSPA planner.
-</small></p>
-
-            </section>
-        
-            <section >
-                <h3><a id="user-content-342-kl-divergence" class="anchor" href="#342-kl-divergence" aria-hidden="true"></a>3.4.2 KL Divergence</h3>
-<blockquote>
-<p><small> <strong>Proposition:</strong>  It is equivalent to use the Log-likelihood or the KL divergence as loss functions to compute the optimal parameters for our NN classification problem.</p>
-</blockquote>
-<script type="math/tex; mode=display">
-   \displaystyle D_{\text{KL}}(p(y)\parallel \hat{y})=-H_{y} + H_{y\hat{y}}(x;\theta)
-</script>
-</small>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-        <section >
-            
-            <h1><a id="user-content-questions" class="anchor" href="#questions" aria-hidden="true"></a>Questions?</h1>
+            <!-- .slide: style="text-align: left;" -->
+<h1><a id="user-content-the-end" class="anchor" href="#the-end" aria-hidden="true"></a>THE END</h1>
 
             </section>
     
